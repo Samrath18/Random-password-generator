@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body id="flex-wrapper">
+    <h1 id="title">Generate a <span id="title-span">Random Password</span></h1>
+    <p class="text">Never use an insecure password again.</p>
+    <div id="block-menu">
+        <label class="label" id ="dropdown-label" for="my-dropdown">Password Length:</label>
+        <select id="my-dropdown" name="my-dropdown">
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+        </select>
+    </div>
+    <input type="checkbox" id="box-num" name="includeNumbers">
+    <label for="box-num" class="label">Include Numbers</label>
+    <input type="checkbox" id="box-sym" name="includeSymbols">
+    <label for="box-sym" class="label">Include Symbols</label>
+    <button id="generate-btn" onclick="render()">Generate Passwords</button>
+    <hr>
+    <p class="label" id="copy-text" style="visibility: hidden;">Click to copy:</p>
+    <button id="password-1" style="visibility: hidden;"></button>
+    <button id="password-2" style="visibility: hidden;"></button>
+    <script src="index.js"></script>
+</body>
+
+</html>
